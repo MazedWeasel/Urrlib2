@@ -1,0 +1,12 @@
+import urllib2
+response = urllib2.urlopen("https://www.azlyrics.com/lyrics/georgeezra/shotgun.html")
+html = response.read()
+
+x = 0
+
+list_of_words = html.split(" ")
+for word in list_of_words:
+	if word == "shotgun":
+		x += 1
+print sad
+# prints (147)
